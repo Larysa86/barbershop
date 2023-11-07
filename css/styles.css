@@ -1,0 +1,47 @@
+:root {
+	/* fonts */
+	--main-font: "Open Sans";
+	--secondary-font: "Raleway";
+	/* text-color */
+	--white-text-color: #fff;
+	--accent-color: #ff6c00;
+	/* background-color */
+
+	/* others */
+}
+
+body {
+	font-family: var(--main-font), sans-serif;
+	font-size: 18px;
+	line-height: 1.67;
+}
+
+/* Common styles */
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+/* Section Header */
+
+.header {
+	background-color: #191c26;
+}
+
+.header-link {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 1.2px;
+
+	color: var(--white-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+	color: var(--accent-color);
+}
