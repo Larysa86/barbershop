@@ -3,9 +3,11 @@
 	--main-font: "Open Sans";
 	--secondary-font: "Raleway";
 	/* text-color */
-	--white-text-color: #fff;
-	--accent-color: #ff6c00;
+	--accent-txt-cl: #ff6c00;
+	--main-light-theme: #fff;
+	--main-dark-theme: #303030;
 	/* background-color */
+	--dark-bg-color: #191c26;
 
 	/* others */
 }
@@ -26,10 +28,27 @@ body {
 	text-decoration: none;
 }
 
+.btn {
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.33;
+	letter-spacing: 1.08px;
+
+	background-color: transparent;
+	text-transform: uppercase;
+}
+
+.btn-mode-light {
+	color: var(--main-dark-theme);
+}
+.btn-mode-dark {
+	color: var(--main-light-theme);
+}
 /* Section Header */
 
 .header {
-	background-color: #191c26;
+	background-color: var(--dark-bg-color);
 }
 
 .header-link {
@@ -38,10 +57,20 @@ body {
 	line-height: 1.33;
 	letter-spacing: 1.2px;
 
-	color: var(--white-text-color);
+	color: var(--main-light-theme);
 }
 
 .header-link:hover,
 .header-link:focus {
-	color: var(--accent-color);
+	color: var(--accent-txt-cl);
+}
+
+.header-contact {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 1.2px;
+
+	color: var(--main-light-theme);
+	text-transform: uppercase;
 }
